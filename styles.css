@@ -8,6 +8,20 @@
     --color-accent: #2563eb;
     --color-accent-hover: #1d4ed8;
     --color-border: #e5e7eb;
+    --color-shadow: rgba(37, 99, 235, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #1a1a1a;
+        --color-surface: #242424;
+        --color-text: #f0f0f0;
+        --color-muted: #9ca3af;
+        --color-accent: #60a5fa;
+        --color-accent-hover: #93c5fd;
+        --color-border: #374151;
+        --color-shadow: rgba(0, 0, 0, 0.4);
+    }
 }
 
 * {
@@ -38,7 +52,7 @@ header {
     border-radius: 8px;
     text-align: center;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+    box-shadow: 0 4px 12px var(--color-shadow);
 }
 
 header h1 {
